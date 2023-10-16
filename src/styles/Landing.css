@@ -1,0 +1,57 @@
+/* Landing.css */
+
+/* Style for labels */
+.App {
+  background-color: rgb(255, 255, 254);
+  background-size: cover; /* or contain, or specific dimensions */
+  background-repeat: no-repeat;
+}
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Style for input fields */
+input {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 250px;
+}
+
+/* Style for buttons */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for result text */
+h2,
+p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Style for the whole component */
+/* .App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+} */
+
+/* Add more styles as needed */

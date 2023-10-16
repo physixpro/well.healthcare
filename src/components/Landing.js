@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import "../styles/Landing.css";
 const Landing = () => {
   const [inputText, setInputText] = useState("");
   const [description, setDescription] = useState("");

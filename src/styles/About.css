@@ -1,0 +1,25 @@
+.about-title {
+  font-family: "AftikaSoft-ExtraBold", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-paragraph {
+  font-family: "PMackinacProMedium", serif;
+  font-weight: 400;
+  font-size: 25px;
+
+  width: 1000px;
+  line-height: 45px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
