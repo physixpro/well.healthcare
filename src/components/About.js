@@ -9,7 +9,7 @@ const About = () => {
         their descriptions, why is that important? Unlike regular search
         engines, this one allows you to input a specific disease and see how
         many times that particular disease has been searched. This is used for
-        data collection to help improve our services to better accomodate or
+        data collection to help improve our services to better accomodate our
         clients.
       </p>
     </div>
