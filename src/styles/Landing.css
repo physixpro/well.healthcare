@@ -76,3 +76,29 @@ p {
 h2 {
   color: #4b9cd3;
 }
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 1;
+  animation: fadeOut 5s ease-in-out;
+  z-index: 2;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}

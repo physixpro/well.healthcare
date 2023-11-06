@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/Landing.css";
+import backgroundImage from "../images/seedsource.png";
 
 const Landing = () => {
   const [inputText, setInputText] = useState("");
   const [description, setDescription] = useState("");
   const [queryKey, setQueryKey] = useState("");
   const [queryResult, setQueryResult] = useState("");
+  const [showImage, setShowImage] = useState(true);
 
   const sanitizeString = (str) => str.replace(/ /g, "_").toLowerCase();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowImage(false);
+    }, 70000);
+
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array ensures this effect runs once after the initial render
 
   const submitInput = () => {
     const sanitizedInput = sanitizeString(inputText);
@@ -35,7 +45,14 @@ const Landing = () => {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${showImage ? "show-image" : ""}`}>
+      {showImage && (
+        <img
+          className="background-image"
+          src={backgroundImage}
+          alt="Background"
+        />
+      )}
       <div className="input-section">
         <h2>Enter Disease</h2>
         <label>Disease Name:</label>

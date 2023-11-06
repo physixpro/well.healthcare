@@ -6,10 +6,10 @@ import About from "./components/About";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <Landing />
-      <Herbbackground />
-      <About />
+      {/* <Herbbackground /> */}
+      {/* <About /> */}
     </div>
   );
 }

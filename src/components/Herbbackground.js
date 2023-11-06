@@ -1,5 +1,5 @@
 import React from "react";
-import herbs from "../images/herbs.jpg";
+// import herbs from "../images/herbs.jpg";
 import you from "../images/you.png";
 
 const Herbbackground = () => {

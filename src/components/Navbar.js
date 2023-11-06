@@ -1,5 +1,5 @@
 import React from "react";
-import well from "../images/well.jpeg";
+import well from "../images/well.png";
 import "../styles/App.css";
 
 const NavBar = () => {
